@@ -3,73 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRECIADO PERFUMES | Fragancias de Lujo en Pereira</title>
-    <meta name="description" content="Descubre la corona de las fragancias en Pereira. Preciado Perfumes ofrece fragancias exclusivas en presentaciones de 30ml, 60ml y 100ml.">
-    
+    <title>PRECIADO PERFUMES | Exclusividad en Pereira</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #000; color: #fff; margin: 0; text-align: center; }
-        header { padding: 60px 20px; background: linear-gradient(rgba(0,0,0,0.9), rgba(20,20,20,0.9)); border-bottom: 2px solid #d4af37; }
-        .logo-text { font-size: 38px; color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 4px; margin: 10px 0; }
-        .slogan { color: #aaa; font-style: italic; font-size: 1.1rem; }
-        .container { padding: 30px 20px; max-width: 600px; margin: auto; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #0b0b0b; color: #ffffff; margin: 0; text-align: center; }
+        header { padding: 40px 20px; background: linear-gradient(#1a1a1a, #0b0b0b); }
+        .crown-icon { font-size: 40px; color: #d4af37; margin-bottom: 10px; }
+        h1 { color: #d4af37; letter-spacing: 5px; text-transform: uppercase; margin: 5px 0; font-size: 1.8rem; }
+        .slogan { color: #888; font-style: italic; font-size: 0.9rem; margin-bottom: 20px; }
         
-        .card { background: #111; border: 1px solid #333; border-radius: 20px; padding: 25px; margin-bottom: 25px; transition: 0.3s; }
-        .card:hover { border-color: #d4af37; }
+        /* Imagen Principal */
+        .hero-img { width: 90%; max-width: 400px; border-radius: 15px; border: 1px solid #333; margin-bottom: 20px; }
         
-        .crown-icon { font-size: 50px; color: #d4af37; margin-bottom: 15px; }
-        h2 { color: #d4af37; margin-bottom: 10px; }
+        .container { padding: 0 20px 40px; max-width: 500px; margin: auto; }
         
-        .btn { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 18px; margin: 15px 0; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: 0.3s; }
+        /* Sección de Catálogos con Imágenes */
+        .catalog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; }
+        .catalog-item { background: #1a1a1a; border-radius: 12px; padding: 10px; border: 1px solid #333; text-decoration: none; transition: 0.3s; }
+        .catalog-item img { width: 100%; border-radius: 8px; margin-bottom: 8px; height: 100px; object-fit: cover; }
+        .catalog-item span { color: #fff; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
+        .catalog-item:hover { border-color: #d4af37; }
+
+        /* Botón de WhatsApp Dorado */
+        .btn-gold { background: linear-gradient(135deg, #d4af37, #b8860b); color: #000; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 20px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
         
-        .btn-whatsapp { background-color: #25d366; color: #fff; }
-        .btn-email { background-color: #fff; color: #000; }
-        .btn-catalog { border: 2px solid #d4af37; color: #d4af37; }
-        
-        .btn:hover { transform: scale(1.03); opacity: 0.9; }
-        
-        .info-tag { font-size: 0.9rem; color: #888; margin-top: 10px; }
-        footer { padding: 40px; color: #444; font-size: 0.8rem; }
+        .footer-info { margin-top: 30px; font-size: 0.8rem; color: #666; }
     </style>
 </head>
 <body>
 
     <header>
         <i class="fas fa-crown crown-icon"></i>
-        <div class="logo-text">PRECIADO PERFUMES</div>
+        <h1>PRECIADO PERFUMES</h1>
         <p class="slogan">La corona de las fragancias en Pereira</p>
+        <img src="principal.jpg" alt="Fragancias" class="hero-img">
+        <p style="font-size: 0.9rem;">Descubre tu fragancia perfecta</p>
     </header>
 
     <div class="container">
-        
-        <div class="card">
-            <h2>Nuestras Presentaciones</h2>
-            <p>Calidad premium en cada gota. Disponibles en:</p>
-            <p><strong>• 30ml • 60ml • 100ml</strong></p>
+        <div class="catalog-grid">
+            <a href="mujer.html" class="catalog-item">
+                <img src="mujer.jpg" alt="Catálogo Mujer">
+                <span>Catálogo Mujer</span>
+            </a>
+            <a href="hombre.html" class="catalog-item">
+                <img src="hombre.jpg" alt="Catálogo Hombre">
+                <span>Catálogo Hombre</span>
+            </a>
         </div>
 
-        <a href="https://wa.me/573046418266?text=Hola!%20Vi%20tu%20página%20web%20y%20quiero%20más%20información%20sobre%20los%20perfumes" class="btn btn-whatsapp">
+        <a href="https://wa.me/573046418266?text=Hola!%20Quiero%20pedir%20mi%20fragancia%20en%20Pereira" class="btn-gold">
             <i class="fab fa-whatsapp"></i> PEDIR POR WHATSAPP
         </a>
 
-        <a href="mailto:Sabespiolo@gmail.com" class="btn btn-email">
-            <i class="fas fa-envelope"></i> ENVIAR CORREO
-        </a>
-
-        <a href="#" class="btn btn-catalog">
-            <i class="fas fa-venus"></i> CATÁLOGO MUJER
-        </a>
-        <a href="#" class="btn btn-catalog">
-            <i class="fas fa-mars"></i> CATÁLOGO HOMBRE
-        </a>
-
-        <p class="info-tag"><i class="fas fa-truck"></i> Envíos a todo Pereira y Colombia</p>
+        <div class="footer-info">
+            <p><i class="fas fa-map-marker-alt"></i> Envíos a todo Pereira</p>
+        </div>
     </div>
-
-    <footer>
-        &copy; 2026 PRECIADO PERFUMES | Pereira, Risaralda<br>
-        Sitio web profesional creado por Tu Nombre
-    </footer>
 
 </body>
 </html>
